@@ -1,0 +1,21 @@
+//////////// g l o b a l ////////////
+
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+//////////// b l o c k s ////////////
+
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer";
+@import "blocks/plain.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/goods.scss";
+@import "blocks/faq.scss";
+@import "blocks/partners.scss";
+@import "blocks/feedback.scss";
+@import "blocks/social.scss";
