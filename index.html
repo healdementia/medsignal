@@ -50,10 +50,7 @@
             <a class="promo__button button" href="#" title="Посмотреть модели">Посмотреть модели</a>
           </div>
           <img class="promo__bg promo__bg--1" src="img/icons-bg-1.svg" width="937" height="502">
-          <picture class="promo__pic">
-            <source type="image/webp" src="img/promo-photo@1x.webp" srcset="img/promo-photo@2x.webp 2x">
-            <img src="img/promo-photo@1x.png" srcset="img/promo-photo@2x.png 2x" width="860" height="611" alt="Наши покупатели с медицинскими браслетами">
-          </picture>
+          <img class="promo__pic" src="img/promo-photo@1x.png" srcset="img/promo-photo@2x.png 2x" width="860" height="611" alt="Наши покупатели с медицинскими браслетами">
           <img class="promo__bg promo__bg--2" src="img/icons-bg-2.svg" width="312" height="250">
           <span class="promo__tip">
             Куприянова А.<br>
@@ -74,10 +71,18 @@
 
       <section class="goods">
         <h1 class="visually-hidden">Купить информационные медицинские браслеты</h1>
-        <div class="container">
+        <div class="container goods__container">
           <ul class="goods__list list">
             <li class="goods__item list__item">
-              <img class="goods__pic" alt="Информационный медицинский браслет">
+              <a href="#">
+                <div class="goods__pic">
+                  <img src="img/bracelet-1.jpg" alt="Информационный медицинский браслет" width="541" height="400">
+                  <span>+ индив. гравировка<br><b>бесплатно!</b></span>
+                  <div class="goods__overlay">
+                    <img src="img/icon-photo.png" width="39" height="34"><span> 2 фото</span>
+                  </div>
+                </div>
+              </a>
               <div class="goods__info">
                 <div class="goods__left">
                   <b class="goods__title">Информационный медицинский браслет</b>
@@ -87,12 +92,22 @@
                 </div>
                 <div class="goods__right">
                   <b class="goods__price">945 &#8381;</b>
-                  <button class="goods__buy button" type="button">В корзину</button>
+                  <button class="goods__buy button" type="button">
+                    <span>В корзину</span>
+                  </button>
                 </div>
               </div>
             </li>
             <li class="goods__item list__item">
-              <img class="goods__pic" alt="Диабетический силиконовый браслет">
+              <a href="#">
+                <div class="goods__pic">
+                  <img src="img/bracelet-2.jpg" alt="Диабетический силиконовый браслет" width="541" height="400">
+                  <span>+ индив. гравировка<br><b>бесплатно!</b></span>
+                  <div class="goods__overlay">
+                    <img src="img/icon-photo.png" width="39" height="34"><span> 4 фото</span>
+                  </div>
+                </div>
+              </a>
               <div class="goods__info">
                 <div class="goods__left">
                   <b class="goods__title">Информационный медицинский браслет</b>
@@ -102,12 +117,22 @@
                 </div>
                 <div class="goods__right">
                   <b class="goods__price">750 &#8381;</b>
-                  <button class="goods__buy goods__buy--added button" type="button">В корзине</button>
+                  <button class="goods__buy goods__buy--added button" type="button">
+                    <span>В корзине</span>
+                  </button>
                 </div>
               </div>
             </li>
             <li class="goods__item list__item">
-              <img class="goods__pic" alt="Информационный медицинский браслет">
+              <a href="#">
+                <div class="goods__pic">
+                  <img src="img/bracelet-3.jpg" alt="Информационный медицинский браслет" width="541" height="400">
+                  <span>+ индив. гравировка<br><b>бесплатно!</b></span>
+                  <div class="goods__overlay">
+                    <img src="img/icon-photo.png" width="39" height="34"><span> 13 фото</span>
+                  </div>
+                </div>
+              </a>
               <div class="goods__info">
                 <div class="goods__left">
                   <b class="goods__title">Информационный медицинский браслет</b>
@@ -117,12 +142,22 @@
                 </div>
                 <div class="goods__right">
                   <b class="goods__price">945 &#8381;</b>
-                  <button class="goods__buy button" type="button">В корзину</button>
+                  <button class="goods__buy button" type="button">
+                    <span>В корзину</span>
+                  </button>
                 </div>
               </div>
             </li>
             <li class="goods__item list__item">
-              <img class="goods__pic" alt="Информационный медицинский браслет">
+              <a href="#">
+                <div class="goods__pic">
+                  <img src="img/bracelet-4.jpg" alt="Информационный медицинский браслет" width="541" height="400">
+                  <span>+ индив. гравировка<br><b>бесплатно!</b></span>
+                  <div class="goods__overlay">
+                    <img src="img/icon-photo.png" width="39" height="34"><span> 3 фото</span>
+                  </div>
+                </div>
+              </a>
               <div class="goods__info">
                 <div class="goods__left">
                   <b class="goods__title">Информационный медицинский браслет</b>
@@ -132,7 +167,9 @@
                 </div>
                 <div class="goods__right">
                   <b class="goods__price">750 &#8381;</b>
-                  <button class="goods__buy button" type="button">В корзину</button>
+                  <button class="goods__buy button" type="button">
+                    <span>В корзину</span>
+                  </button>
                 </div>
               </div>
             </li>
@@ -141,7 +178,7 @@
       </section>
 
       <section class="faq">
-        <div class="container">
+        <div class="container faq__container">
           <h2 class="faq__headline headline">Часто задаваемые вопросы</h2>
           <form class="faq__accordion">
             <div class="faq__group">
@@ -180,106 +217,126 @@
             </label>
             </div>
           </form>
-          <p class="faq__info"><span>Не нашли нужную информацию? </span><a class="faq__link">Задайте вопрос</a> прямо сейчас!<br><i>Мы ответим в течение 45 минут в рабочее время.</i></p>
+          <p class="faq__info"><span>Не нашли нужную информацию? </span><a class="faq__link" href="#">Задайте вопрос</a> прямо сейчас!<br><i>Мы ответим в течение 45 минут в рабочее время.</i></p>
         </div>
       </section>
 
       <section class="partners">
-        <h2 class="partners__headline headline">С нами сотрудничают</h2>
-        <ul class="partners__list list">
-          <li class="partners__item list__item">
-            <img class="partners__pic" alt="РЖД">
-          </li>
-          <li class="partners__item list__item">
-            <img class="partners__pic" alt="ТПП РФ">
-          </li>
-          <li class="partners__item list__item">
-            <img class="partners__pic" alt="Совет Федерации">
-          </li>
-          <li class="partners__item list__item">
-            <img class="partners__pic" alt="Судэкс">
-          </li>
-          <li class="partners__item list__item">
-            <img class="partners__pic" alt="Серебряный Дождь">
-          </li>
-          <li class="partners__item list__item">
-            <img class="partners__pic" alt="РЖД">
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="partners__headline headline">С нами сотрудничают</h2>
+          <ul class="partners__list list">
+            <li class="partners__item list__item">
+              <a href="http://rzd.ru" target="_blank" title="РЖД">
+                <img class="partners__pic" src="img/partners-rzd.jpg" width="160" height="160" alt="РЖД">
+              </a>
+            </li>
+            <li class="partners__item list__item">
+              <a href="http://tpprf.ru/ru/" target="_blank" title="ТПП РФ">
+                <img class="partners__pic" src="img/partners-tpp-rf.jpg" width="160" height="160" alt="ТПП РФ">
+              </a>
+            </li>
+            <li class="partners__item list__item">
+              <a href="http://www.council.gov.ru" target="_blank" title="Совет Федерации">
+                <img class="partners__pic" src="img/partners-sovet.jpg" width="160" height="160" alt="Совет Федерации">
+              </a>
+            </li>
+            <li class="partners__item list__item">
+              <a href="http://www.sudex.ru" target="_blank" title="Судэкс">
+                <img class="partners__pic" src="img/partners-sudeks.png" width="160" height="160" alt="Судэкс">
+              </a>
+            </li>
+            <li class="partners__item list__item">
+              <a href="http://www.silver.ru" target="_blank" title="Серебряный Дождь">
+                <img class="partners__pic" src="img/partners-100fm.jpg" width="160" height="160" alt="Серебряный Дождь">
+              </a>
+            </li>
+            <li class="partners__item list__item">
+              <a href="http://rzd.ru" target="_blank" title="РЖД">
+                <img class="partners__pic" src="img/partners-rzd.jpg" width="160" height="160" alt="РЖД">
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="feedback">
-        <h2 class="feedback__headline headline">Обратная связь</h2>
-        <form class="feedback__form">
-          <fieldset class="feedback__fieldset">
-            <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
-            <input class="feedback__input" type="tel" id="tel" name="tel" placeholder="Ваш телефон" required>
-            <input class="feedback__input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
-          </fieldset>
-          <fieldset class="feedback__fieldset">
-            <textarea class="feedback__textarea" cols="10" rows="3" name="text" placeholder="Комментарий (необязательно)"></textarea>
-          </fieldset>
-          <button class="feedback__button button" type="submit">Отправить</button>
-        </form>
+        <div class="container feedback__container">
+          <h2 class="feedback__headline headline">Обратная связь</h2>
+          <form class="feedback__form">
+            <fieldset class="feedback__fieldset">
+              <input class="feedback__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+              <input class="feedback__input" type="tel" id="tel" name="tel" placeholder="Ваш телефон" required>
+              <input class="feedback__input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+            </fieldset>
+            <fieldset class="feedback__fieldset">
+              <textarea class="feedback__textarea" cols="10" rows="3" name="text" placeholder="Комментарий (необязательно)"></textarea>
+            </fieldset>
+            <div class="feedback__bottom">
+              <button class="feedback__button button" type="submit"><span>Отправить</span></button>
+            </div>
+          </form>
+        </div>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__copyright">© «МедСигнал». Медицинские информационные браслеты. Москва, 2015-2017<br>Вся продукция защищена авторскими и патентными правами</p>
-      <p class="page-footer__info">8 (903) 532-40-77<br><a href="mailto:info@medsignal.ru">info@medsignal.ru</a></p>
-      <ul class="page-footer__social social list">
-        <li class="social__item list__item">
-          <a href="#" title="Instagram">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="MySpace">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="Одноклассники">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="LiveJournal">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="Pinterest">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="Twitter">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="LinkedIn">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="Facebook">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="ВКонтакте">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-        <li class="social__item list__item">
-          <a href="#" title="Google Plus">
-            <svg class="social__icon"></svg>
-          </a>
-        </li>
-      </ul>
+      <div class="container page-footer__container">
+        <p class="page-footer__copyright">© «МедСигнал». Медицинские информационные браслеты. Москва, 2015-2017<br>Вся продукция защищена авторскими и патентными правами</p>
+        <p class="page-footer__info">8 (903) 532-40-77<br><a href="mailto:info@medsignal.ru">info@medsignal.ru</a></p>
+        <ul class="page-footer__social social list">
+          <li class="social__item list__item">
+            <a href="#" title="Instagram">
+              <img class="social__icon" src="img/icon-instagram.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="MySpace">
+              <img class="social__icon" src="img/icon-myspace.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="Одноклассники">
+              <img class="social__icon" src="img/icon-ok.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="LiveJournal">
+              <img class="social__icon" src="img/icon-lj.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="Pinterest">
+              <img class="social__icon" src="img/icon-pinterest.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="Twitter">
+              <img class="social__icon" src="img/icon-twitter.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="LinkedIn">
+              <img class="social__icon" src="img/icon-linkedin.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="Facebook">
+              <img class="social__icon" src="img/icon-fb.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="ВКонтакте">
+              <img class="social__icon" src="img/icon-vk.png" width="28" height="28">
+            </a>
+          </li>
+          <li class="social__item list__item">
+            <a href="#" title="Google Plus">
+              <img class="social__icon" src="img/icon-google.png" width="28" height="28">
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
   </body>

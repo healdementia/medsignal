@@ -1,0 +1,19 @@
+.social__item {
+  display: inline;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social__icon {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+}

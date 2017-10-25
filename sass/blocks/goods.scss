@@ -1,3 +1,167 @@
 .goods {
   background-color: #eaedee;
 }
+
+.goods__container {
+  padding-top: 52px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods__item {
+  width: 541px;
+  margin-bottom: 52px;
+}
+
+.goods__pic {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.goods__pic > img {
+  display: block;
+}
+
+.goods__overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#f7717f, 0.9);
+  opacity: 0;
+}
+
+.goods__overlay > span {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.goods__pic:hover .goods__overlay {
+  opacity: 1;
+}
+
+.goods__pic > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 141px;
+  height: 46px;
+  padding: 7px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #f7717f;
+  border-bottom-left-radius: 20px;
+  box-sizing: border-box;
+}
+
+.goods__pic > span b {
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: $black-font;
+}
+
+.goods__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods__right {
+  width: 160px;
+  text-align: right;
+}
+
+.goods__title {
+  display: block;
+  margin-top: 19px;
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $medium-font;
+  color: #333333;
+}
+
+.goods__specs {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $light-font;
+  color: #999999;
+  margin: 0;
+}
+
+.goods__specs span {
+  font-family: $medium-font;
+}
+
+.goods__link {
+  display: block;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $medium-font;
+  color: $theme-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: #f7717f;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.goods__price {
+  display: block;
+  margin-top: 15px;
+  font-size: 38px;
+  line-height: 38px;
+  font-family: $medium-font;
+  color: #333333;
+}
+
+.goods__buy {
+  margin-top: 22px;
+  padding-left: 50px;
+
+  &--added {
+    border-color: #f7717f;
+    color: #f7717f;
+  }
+}
+
+.goods__buy span {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 23px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    left: -33px;
+    background-image: url("../img/icon-basket-add.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.goods__buy--added span::before {
+  background-image: url("../img/icon-basket-added.svg");
+}

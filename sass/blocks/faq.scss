@@ -2,6 +2,17 @@
   background-color: #15bea4;
 }
 
+.faq__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq__headline {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
 .faq__accordion {
   width: 100%;
 }
@@ -10,7 +21,7 @@
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 15px 30px;
+  padding: 16px 70px;
   font-size: 18px;
   line-height: 20px;
   color: #333333;
@@ -27,16 +38,41 @@
 }
 
 .faq__title {
+  position: relative;
   margin: 0;
+  font-family: $medium-font;
+  font-weight: normal;
   font-size: 18px;
   line-height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/toggle-arrow-grey.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .faq__input:checked ~ .faq__label {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: #15bea4;
   background-color: #ffffff;
+}
+
+.faq__label:hover .faq__title::before {
+  background-image: url("../img/toggle-arrow-green.png");
+}
+
+.faq__input:checked ~ .faq__label .faq__title::before {
+  background-image: url("../img/toggle-arrow-green.png");
+  transform: rotate(180deg);
 }
 
 .faq__description {
@@ -57,4 +93,27 @@
   display: block;
   transition: all 1s ease-out 1s;
   -webkit-transition: all 1s ease-out 1s;
+}
+
+.faq__info {
+  margin-top: 40px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+}
+
+.faq__info span {
+  font-family: $bold-font;
+}
+
+.faq__link {
+  font-family: $medium-font;
+  color: #ccffff;
+  text-decoration: underline;
+}
+
+.faq__info i {
+  font-family: $regular-font;
+  font-size: 16px;
 }
