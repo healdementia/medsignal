@@ -11,8 +11,17 @@
 }
 
 .page-footer__copyright {
+  position: relative;
+  padding-left: 12px;
   font-size: 11px;
   line-height: 18px;
+
+  &::before {
+    content: "©";
+    position: absolute;
+    top: 0;
+    left: -3px;
+  }
 }
 
 .page-footer__info {

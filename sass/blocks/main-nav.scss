@@ -45,25 +45,33 @@
 }
 
 .main-nav__basket {
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 200px;
   margin-left: auto;
+  z-index: 2;
+}
+
+.main-nav__basket b {
   font-family: $medium-font;
   font-size: 14px;
   line-height: 22px;
-  color: #f7717f;
+  color: $theme-color;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -32px;
-    width: 27px;
-    height: 22px;
-    background-image: url("../img/icon-basket.svg");
-    background-repeat: none;
-    background-position: center;
-    background-size: contain;
-  }
+.main-nav__basket-icon {
+  stroke: $theme-color;
+  fill: none;
+  margin-right: 5px;
+}
+
+.main-nav__basket--added b {
+  color: #f7717f;
+}
+
+.main-nav__basket--added .main-nav__basket-icon {
+  stroke: #f7717f;
 }
 
 .main-nav__basket span {

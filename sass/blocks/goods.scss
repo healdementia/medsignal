@@ -138,30 +138,40 @@
 }
 
 .goods__buy {
+  display: flex;
+  align-items: center;
   margin-top: 22px;
-  padding-left: 50px;
+
+  &:hover {
+    background-color: $theme-color;
+    color: #ffffff;
+  }
 
   &--added {
     border-color: #f7717f;
     color: #f7717f;
   }
+
+  &--added:hover {
+    background-color: #f7717f;
+    color: #ffffff;
+  }
 }
 
 .goods__buy span {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    width: 23px;
-    height: 21px;
-    position: absolute;
-    top: 0;
-    left: -33px;
-    background-image: url("../img/icon-basket-add.svg");
-    background-repeat: no-repeat;
+.goods__buy-icon {
+  margin-right: 10px;
+  fill: none;
+  stroke: $theme-color;
+
+  &--added {
+    stroke: #f7717f;
   }
 }
 
-.goods__buy--added span::before {
-  background-image: url("../img/icon-basket-added.svg");
+.goods__buy:hover .goods__buy-icon {
+  stroke: #ffffff;
 }

@@ -36,6 +36,10 @@
   border-radius: 10px;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: rgba(#ffffff, 0.1);
+  }
+
   &:focus,
   &:active {
     background-color: #ffffff;
@@ -82,11 +86,14 @@ textarea:-moz-placeholder {
 }
 
 .feedback__button {
-  margin-top: 40px;
-  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  margin: 40px auto 0;
+  color: #ffffff;
   background-color: $theme-color;
 
   &:hover {
+    color: $theme-color;
     background-color: #ffffff;
     border-color: #ffffff;
   }
@@ -97,26 +104,12 @@ textarea:-moz-placeholder {
   }
 }
 
-.feedback__button span {
-  position: relative;
-  color: #ffffff;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: -33px;
-    width: 27px;
-    height: 15px;
-    background-image: url("../img/icon-send.png");
-    background-repeat: no-repeat;
-  }
+.feedback__send-icon {
+  margin-right: 5px;
+  fill: none;
+  stroke: #ffffff;
 }
 
-.feedback__button:hover span {
-  color: $theme-color;
-
-  &::before {
-    background-image: url("../img/icon-send-green.png");
-  }
+.feedback__button:hover .feedback__send-icon {
+  stroke: $theme-color;
 }

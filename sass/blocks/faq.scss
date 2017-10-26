@@ -44,17 +44,6 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 20px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -40px;
-    width: 17px;
-    height: 17px;
-    background-image: url("../img/toggle-arrow-grey.png");
-    background-repeat: no-repeat;
-  }
 }
 
 .faq__input:checked ~ .faq__label {
@@ -66,12 +55,19 @@
   background-color: #ffffff;
 }
 
-.faq__label:hover .faq__title::before {
-  background-image: url("../img/toggle-arrow-green.png");
+.faq__toggle {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  stroke: #333333;
 }
 
-.faq__input:checked ~ .faq__label .faq__title::before {
-  background-image: url("../img/toggle-arrow-green.png");
+.faq__label:hover .faq__toggle {
+  stroke: $theme-color;
+}
+
+.faq__input:checked ~ .faq__label .faq__toggle {
+  stroke: $theme-color;
   transform: rotate(180deg);
 }
 
@@ -95,6 +91,15 @@
   -webkit-transition: all 1s ease-out 1s;
 }
 
+.faq__input:checked:hover ~ .faq__label .faq__title,
+.faq__input:checked:hover ~ .faq__label a {
+  color: #f7717f;
+}
+
+.faq__input:checked:hover ~ .faq__label .faq__toggle {
+  stroke: #f7717f;
+}
+
 .faq__info {
   margin-top: 40px;
   color: #ffffff;
@@ -111,6 +116,15 @@
   font-family: $medium-font;
   color: #ccffff;
   text-decoration: underline;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .faq__info i {
