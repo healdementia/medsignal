@@ -15,7 +15,7 @@
     <script src="js/picturefill.js" async></script>
   </head>
 
-  <body>
+  <body role="document">
 
     <svg style="display: none;">
       <defs>
@@ -144,8 +144,8 @@
       </symbol>
     </svg>
 
-    <header class="page-header">
-      <nav class="main-nav">
+    <header class="page-header" role="banner">
+      <nav class="main-nav" role="navigation">
         <div class="container main-nav__flex">
           <picture>
             <source type="image/webp" src="img/logo@1x.webp" srcset="img/logo@2x.webp 2x">
@@ -202,9 +202,9 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main" role="main">
 
-      <section class="goods">
+      <section class="goods" role="region">
         <h1 class="visually-hidden">Купить информационные медицинские браслеты</h1>
         <div class="container goods__container">
           <ul class="goods__list list">
@@ -324,7 +324,7 @@
         </div>
       </section>
 
-      <section class="faq">
+      <section class="faq" role="region">
         <div class="container faq__container">
           <h2 class="faq__headline headline">Часто задаваемые вопросы</h2>
           <form class="faq__accordion">
@@ -393,7 +393,7 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section class="partners" role="region">
         <div class="container">
           <h2 class="partners__headline headline">С нами сотрудничают</h2>
           <ul class="partners__list list">
@@ -431,7 +431,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback" role="region">
         <div class="container feedback__container">
           <h2 class="feedback__headline headline">Обратная связь</h2>
           <form class="feedback__form">
@@ -456,7 +456,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" role="contentinfo">
       <div class="container page-footer__container">
         <p class="page-footer__copyright">«МедСигнал». Медицинские информационные браслеты. Москва, 2015-2017<br>Вся продукция защищена авторскими и патентными правами</p>
         <p class="page-footer__info">8 (903) 532-40-77<br><a href="mailto:info@medsignal.ru">info@medsignal.ru</a></p>
